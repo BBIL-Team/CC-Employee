@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-project1-dev-718bd-authRole",
+      "UnauthRoleArn": "arn:aws:iam::020386346610:role/amplify-project1-dev-718bd-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::020386346610:role/amplify-project1-dev-718bd-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-project1-dev-718bd-deployment",
+      "UnauthRoleName": "amplify-project1-dev-718bd-unauthRole",
+      "StackName": "amplify-project1-dev-718bd",
+      "StackId": "arn:aws:cloudformation:ap-south-1:020386346610:stack/amplify-project1-dev-718bd/cdb181f0-8b7d-11ef-8750-0267c77fc89f",
+      "AmplifyAppId": "d9mb6rgp5mqle"
+    }
+  },
+  "auth": {
+    "project1a01d6b16": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-project1-dev-718bd-deployment/amplify-cfn-templates/auth/project1a01d6b16-cloudformation-template.json",
+        "logicalId": "authproject1a01d6b16"
+      },
+      "lastPushTimeStamp": "2024-10-16T05:42:11.525Z",
+      "output": {
+        "UserPoolId": "ap-south-1_q3Z2NnQki",
+        "AppClientIDWeb": "265hq4fjus65sck134bdmhtpdi",
+        "AppClientID": "2cq07ii2pi76uh6apo47o4tun3",
+        "IdentityPoolId": "ap-south-1:60f59cf8-e63a-4a2e-91b3-481181a45fa8",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-south-1:020386346610:userpool/ap-south-1_q3Z2NnQki",
+        "IdentityPoolName": "project1a01d6b16_identitypool_a01d6b16__dev",
+        "UserPoolName": "project1a01d6b16_userpool_a01d6b16"
+      },
+      "lastPushDirHash": "YC6DM9PgkP4EHBshZ5ZwrDY1rVg="
+    }
+  }
+}
