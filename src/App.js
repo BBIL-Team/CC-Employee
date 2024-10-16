@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import { Amplify } from 'aws-amplify';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+import config from './amplifyconfiguration.json';
+Amplify.configure(config);
 
-const App = () => {
+
+function App({ signOut, user }) {
     const employeeId = '10005315'; 
     const [tasks, setTasks] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -212,4 +218,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default withAuthenticator(App);
